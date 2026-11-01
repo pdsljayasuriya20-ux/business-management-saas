@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Main Dashboard
+Route::livewire('/', 'pages::dashboard')
+    ->name('dashboard');
